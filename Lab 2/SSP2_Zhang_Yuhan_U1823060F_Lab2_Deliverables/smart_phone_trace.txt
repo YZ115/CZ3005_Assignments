@@ -1,0 +1,23 @@
+?- unethical(stevey).
+
+Call:unethical(stevey)
+ Call:boss(stevey)
+ Exit:boss(stevey)
+ Call:business(_4828)
+ Call:technology(_4828)
+ Exit:technology(galactica-s3)
+ Exit:business(galactica-s3)
+ Call:rival(_4834)
+ Call:competitor(_4834, appy)
+ Exit:competitor(sumsum, appy)
+ Exit:rival(sumsum)
+ Call:steal(stevey, galactica-s3, sumsum)
+ Exit:steal(stevey, galactica-s3, sumsum)
+ Exit:unethical(stevey)
+true
+ Redo:rival(_5328)
+ Call:competitor(appy, _5326)
+ Fail:competitor(appy, _5326)
+ Fail:rival(_5324)
+ Fail:unethical(stevey)
+false
